@@ -20,10 +20,10 @@ fun NavigationHost() {
     val navController = rememberNavController()
 
     NavHost(navController = navController, startDestination = NavRoute.Authentication.route) {
-        composable(NavRoute.Authentication.route) { Authentication(navController = navController) }
-        composable(NavRoute.Search.route) { Search(navController = navController) }
-        composable(NavRoute.Booking.route) { Booking(navController = navController) }
-        composable(NavRoute.Help.route) { Help(navController = navController) }
-        composable(NavRoute.Settings.route) { Settings(navController = navController) }
+        composable(NavRoute.Authentication.route) { AuthenticationScreen(navController = navController) }
+        composable(NavRoute.Search.route) { SearchScreen(navController = navController) }
+        composable(NavRoute.Booking.route) { BookingScreen(navController = navController) }
+        composable(NavRoute.Help.route) { HelpScreen(navController = navController) }
+        composable(NavRoute.Settings.route) { SettingsScreen(navController = navController) }
     }
 }

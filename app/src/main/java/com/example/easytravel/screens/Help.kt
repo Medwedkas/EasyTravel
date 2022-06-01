@@ -5,6 +5,6 @@ import androidx.navigation.NavHostController
 import com.example.easytravel.navigation.NavRoute
 
 @Composable
-fun Help(navController: NavHostController) {
+fun HelpScreen(navController: NavHostController) {
 
 }
